@@ -1,0 +1,123 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.modal-content h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: #032b41;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 24px; 
+}
+.or-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0; 
+}
+.guest__btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #3a579d;
+  color: white;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 300ms ease;
+}
+.guest__btn:hover {
+  background-color: #2e467d;
+} 
+.line {
+  flex: 1;
+  height: 1px;
+  background: #ccc; 
+  margin: 0 12px;   
+}
+.or-text {
+  padding: 0 8px;   
+  color: #666;      
+  font-size: 0.9em; 
+}
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.modal__btn  {
+  width: 100%;
+  padding: 10px;
+  background-color: #2bd97c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 12px 0;
+  transition: all 300ms ease;
+}
+.modal__btn:hover {
+  background-color: #20ba68;
+}
+.modal__btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.modal__btn--close {
+  background: none;
+    border: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+.modal__links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 12px;
+}
+.modal__link {
+  font-size: 18px;
+  color: #116be9;
+  cursor: pointer;
+}
+.modal__link--btn {
+  height: 40px;
+    text-align: center;
+    background-color: #f1f6f4;
+    color: #116be9;
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+    font-size: 18px;
+}
+.modal__return {
+  background-color: #f1f6f4;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}

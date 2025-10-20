@@ -1,0 +1,47 @@
+.skeleton-card,
+.skeleton-selected {
+  background: #f3f3f3;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.skeleton-img { width: 100px; height: 140px; border-radius: 8px; background: #ddd; }
+.skeleton-title { width: 60%; height: 18px; margin-top: 10px; border-radius: 6px; background: #ddd; }
+.skeleton-author,
+.skeleton-subtitle,
+.skeleton-detail-row { width: 40%; height: 14px; margin-top: 8px; border-radius: 6px; background: #eee; }
+
+.skeleton-selected-sub { width: 120px; height: 16px; background: #ddd; border-radius: 5px; margin-bottom: 6px; }
+.skeleton-selected-line { width: 80%; height: 4px; background: #ddd; border-radius: 2px; margin-bottom: 14px; }
+.skeleton-selected-content { display: flex; gap: 1rem; }
+.skeleton-duration { width: 80px; height: 14px; margin-top: 10px; border-radius: 6px; background: #eee; }
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #f3f3f3;
+}
+
+.skeleton .shimmer {
+  background: linear-gradient(
+      90deg,
+      #eaeaea 25%,
+      #f5f5f5 50%,
+      #eaeaea 75%
+  );
+  background-size: 400px 100%;
+  animation: shimmer 1.5s infinite linear forwards;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #eaeaea 25%, #f5f5f5 50%, #eaeaea 75%);
+  background-size: 400px 100%;
+  animation: shimmer 1.6s infinite linear;
+}
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+

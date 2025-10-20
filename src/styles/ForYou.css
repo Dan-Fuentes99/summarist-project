@@ -1,0 +1,43 @@
+.row {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.container {
+    padding: 32px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.for-you__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 100px);
+    transition: all .3s;
+}
+.for-you__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #032b41;
+    margin-bottom: 16px;
+}
+.for-you__subtitle {
+    font-weight: 300;
+    color: #394547;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+    .for-you__wrapper {
+        margin-left:0;
+        width: 100%
+    }
+}
+
+@media (max-width: 560px) {
+    .selected__book {
+        width: 100%;
+    }
+}

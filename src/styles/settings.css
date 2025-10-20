@@ -1,0 +1,71 @@
+.settings__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    transition: all .3s;
+}
+.page__title {
+    text-align: left;
+    border-bottom: 1px solid #e1e7ea;
+    padding-bottom: 16px;
+}
+.settings__login--wrapper {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.settings__login--wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.settings__login--text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #032b41;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.settings__btn {
+    max-width: 160px;
+    color: white;
+}
+
+.settings__account--wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.subscription__wrapper {
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #e1e7ea;
+    max-width: 240px;
+}
+.subscription__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #032b41;
+    margin-bottom: 16px;
+}
+.subscription__plan {
+    font-size: 16px;
+    color: #032b41;
+    margin-bottom: 16px;
+}
+.subscription__plan--status {
+    font-size: 24px;
+    font-weight: bold;
+    color: #032b41;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+    .settings__wrapper {
+        margin: 0;
+        padding-right: 24px;
+    }
+}
