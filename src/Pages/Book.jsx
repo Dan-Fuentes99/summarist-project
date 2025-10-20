@@ -108,7 +108,6 @@ function Book() {
 
   return (
     <div className="main__content">
-      {/* <div className="wrapper"> */}
         <div className="book__row">
           <div className="book__container">
             <div className="inner__wrapper">
@@ -246,7 +245,6 @@ function Book() {
             </div>
           </div>
         </div>
-      {/* </div> */}
     </div>
   );
 }

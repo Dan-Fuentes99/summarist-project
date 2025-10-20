@@ -74,23 +74,6 @@ function App() {
           onBurgerClick={() => setSidebarOpen(!sidebarOpen)}
         />
       )}
-      {/* {location.pathname !== "/" && location.pathname !== "/choose-plan" && (
-        <div className="header-actions-row">
-          {isMobile && !sidebarOpen && (
-            <button
-              className="burger-btn"
-              onClick={() => setSidebarOpen(!sidebarOpen)}
-              style={{
-                background: "transparent",
-                border: "none",
-              }}
-            >
-              <FaBars size={32} />
-            </button>
-          )}
-          <Search />
-        </div>
-      )} */}
       {isMobile && sidebarOpen && (
         <div
           className="sidebar-backdrop"
