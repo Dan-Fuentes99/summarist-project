@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
 import Sidebar from "./components/Sidebar";
 import Search from "./components/Search";
 import Home from "./Pages/Home";
@@ -14,8 +13,6 @@ import NewAccount from "./components/NewAccount";
 import Read from "./Pages/Read";
 import {
   signInWithEmailAndPassword,
-  signOut,
-  onAuthStateChanged,
 } from "firebase/auth";
 import { auth } from "./firebase";
 
@@ -27,9 +24,7 @@ function App() {
   const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  const showSidebar = location.pathname !== "/" && (!isMobile || sidebarOpen);
 
-  const openSidebar = () => setSidebarOpen(true);
   const closeSidebar = () => setSidebarOpen(false);
 
   function onLoginClick() {
