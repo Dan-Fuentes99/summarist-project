@@ -29,15 +29,15 @@
     margin-bottom: 16px;
 }
 
+@media (max-width: 991px) {
+    .for-you__wrapper{
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
     .for-you__wrapper {
         margin-left:0;
         width: 100%
-    }
-}
-
-@media (max-width: 560px) {
-    .selected__book {
-        width: 100%;
     }
 }

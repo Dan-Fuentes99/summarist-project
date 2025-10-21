@@ -55,23 +55,14 @@ button:disabled {
 .row {
   max-width: 1070px;
   width: 100%;
-  margin: 0 auto;
   padding: 0 24px;
+  margin: 0 auto;
 }
 
 .container {
   padding: 40px 0;
   width: 100%;
 }
-/* 
-.wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-left: 200px;
-    width: calc(100% - 200px);
-    transition: all .3s;
-} */
 
 .btn {
   background-color: #2bd97c;

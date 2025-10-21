@@ -27,7 +27,7 @@ function SelectedBook() {
   }, []);
 
   return (
-    <div>
+    <div className="overflow">
       {loading
         ? Array.from({ length: 1 }).map((_, idx) => <Skeleton variant="selected" key={idx} />)
         : book.map((book, index) => (
@@ -35,8 +35,8 @@ function SelectedBook() {
         <div className="selected__book--subtitle">{book.subTitle}</div>
         <div className="selected__book--line"></div>
         <div className="selected__book--content">
-          <figure className="book__image--wrapper">
-            <img src={book.imageLink} alt="" className="book__image" />
+          <figure className="selected__img--wrapper">
+            <img src={book.imageLink} alt="" className="selected__img" />
           </figure>
           <div className="selected__book--text">
             <div className="selected__book--title">{book.title}</div>
